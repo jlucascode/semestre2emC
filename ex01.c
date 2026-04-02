@@ -1,12 +1,12 @@
-/*#include <stdio.h>
-int main() {
-    printf("Joao Lucas Sousa Miranda\n21/06/2006");
-    return 0;
-}
-*/
+
 #include <stdio.h>
 int main() {
+    char nome[100];
+    int dia, mes, ano;
     printf("Digite seu nome completo:\n ");
-    scanf("%s");
+    scanf(" %[^\n]", nome);
+    printf("Digite sua data de nascimento:\n ");
+    scanf("%d/%d/%d", &dia, &mes, &ano);
+    printf("%s, %d/%d/%d\n", nome, dia, mes, ano);
     return 0;
 }
